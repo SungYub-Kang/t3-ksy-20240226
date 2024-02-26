@@ -1,20 +1,15 @@
-project = "sample"
-security_group_ids = [
-  "$securitygroup.results.ids.value.efs"
-]
-stage = "dev"
-name = "efs"
-subnet_ids = [
-  "$vpc.results.subnet_ids.value.privateSubnet-a",
-  "$vpc.results.subnet_ids.value.privateSubnet-c"
-]
-region = "us-east-1"
-region_code = "us"
+project = "cta"
 provisioned_throughput_in_mibps = 100
+security_group_ids = [ "$securitygroup.results.ids.value.efs" ]
 performance_mode = "generalPurpose"
 tags = {}
+stage = "dev"
 encrypted = true
 enable_automatic_backups = true
+name = "efs"
+subnet_ids = [ "$vpc.results.subnet_ids.value.privateSubnet-a" , "$vpc.results.subnet_ids.value.privateSubnet-c" ]
 throughput_mode = "bursting"
 lifecycle_policy = {}
 access_points = {}
+region = "ap-northeast-2"
+region_code = "kr"
