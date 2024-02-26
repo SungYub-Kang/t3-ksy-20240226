@@ -1,4 +1,4 @@
-project = "sample"
+project = "cta"
 security_group_ids = [
   "$securitygroup.results.ids.value.rds"
 ]
@@ -10,10 +10,10 @@ subnet_ids = [
 ]
 identifier = "rds"
 stage = "dev"
-region = "us-east-1"
+region = "ap-northeast-2"
 engine_version = "10.5.23"
 instance_type = "db.t3.medium"
-region_code = "us"
+region_code = "kr"
 username = "admin"
 storage_type = "gp2"
 snapshot_identifier = null
