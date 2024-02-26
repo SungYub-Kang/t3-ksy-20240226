@@ -1,0 +1,1 @@
+AWS EC2 gitops console Catalog architecture : https://devops.sdsdev.co.kr/confluence/display/CNCF/AWS-EC2
